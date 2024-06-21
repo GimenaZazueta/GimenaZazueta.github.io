@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto final parcial 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
+    Gimena Joselinne Zazueta Benitez
+    <div class="container">
+        <h1>Proyecto final parcial #3</h1>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT * FROM alumno;</h3>
+                <h4>Consulta #1. Obtener el listado de todos los alumnos de la facultad </h4>
+                <img src="imagenes/Consulta 1.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
+                <h4>Consulta #2. Obtener el listado de curso y las asignaturas que tienen </h4>
+                <img src="imagenes/Consulta 2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
     
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
