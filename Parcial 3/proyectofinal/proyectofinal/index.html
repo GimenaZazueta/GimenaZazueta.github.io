@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final parcial 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    Gimena Joselinne Zazueta Benitez
+    <div class="container">
+        <h1>Proyecto final parcial #3</h1>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT * FROM alumno;</h3>
+                <h4>Consulta #1. Obtener el listado de todos los alumnos de la facultad. </h4>
+                <img src="imagenes/Consulta 1.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
+                <h4>Consulta #2. Obtener el listado de curso y las asignaturas que tienen. </h4>
+                <img src="imagenes/Consulta 2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT nombre, apellido1, apellido2 FROM alumno WHERE beca = 'Sí'</h3>
+                <h4>Consulta #3. Obtener listado (nombre y apellido) de alumnos que tengan beca. </h4>
+                <img src="imagenes/Consulta 3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+            <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT nombre, apellido1, apellido2, email FROM profesor</h3>
+                <h4>Consulta #4. Obtener listado de profesores (nombre, apellido), y su numero contacto. </h4>
+                <img src="imagenes/Consulta 4.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #5. Obtener listado de alumnos (todos los campos) que están inscritos  a la asignatura de programación. </h4>
+                <img src="imagenes/Consulta 5.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #6. Obtener listado de profesores y asignaturas que imparten. </h4>
+                <img src="imagenes/Consulta 6.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #7. Mostrar la asignatura que tiene mas alumnos inscritos y su total.</h4>
+                <img src="imagenes/Consulta 7.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #8. Obtener listado de alumnos que les da clase el profesor con id PR048 (jose manuel), sin importar en que asignatura esté inscrito. </h4>
+                <img src="imagenes/Consulta 8.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #9. Obtener listado de cursos, con asignatura. y el maestro que las imparte. </h4>
+                <img src="imagenes/Consulta 9.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"></h3>
+                <h4>Consulta #10. Obtener listado de alumnos, con asignaturas que cursa, profesor que la imparte y curso al que pertenece. </h4>
+                <img src="imagenes/Consulta 10.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
