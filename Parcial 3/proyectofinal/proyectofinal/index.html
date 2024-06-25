@@ -38,7 +38,8 @@
 
             <div class="row mt-2">
             <div class="col">
-                <h3 class="card">SELECT nombre, apellido1, apellido2, email FROM profesor</h3>
+                <h3 class="card">SELECT p.idProfesor, p.nombre AS nombre_profesor, p.apellido1 AS apellido1_profesor, p.apellido2 AS apellido2_profesor, t.telefono AS numero_contacto FROM profesor p JOIN tlfcontactoprof t ON p.idProfesor = t.idProfesor ORDER BY p.idProfesor
+                </h3>
                 <h4>Consulta #4. Obtener listado de profesores (nombre, apellido), y su numero contacto. </h4>
                 <img src="imagenes/Consulta 4.png" alt="" class="img-fluid">
             </div>
