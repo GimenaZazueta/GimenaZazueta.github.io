@@ -107,7 +107,47 @@
     } else {                
         echo "<img src='incorrecto.png' width='50px'><hr>";
     }    
-    
+
+    //Pregunta 8 - ¿Cuales son los elementos de la armonia?
+    echo "<h3> ¿Cuales son los elementos de la armonia?";
+    echo "<h5>Repuesta seleccionada ".implode(", ", $pregunta4)." ---- Correcta = Magia, lealtad, risa, generosidad, honestidad y amabilidad</h5>";
+    $p8_respuestas_correctas = 0;
+    if(count($pregunta8) == 6){
+        for($i = 0; $i < count($pregunta8); $i++){
+            if($pregunta8[$i] == "magia" || $pregunta8[$i] == "lealtad" || $pregunta8[$i] == "risa" || $pregunta8[$i] == "generosidad" || $pregunta8[$i] == "honestidad" || $pregunta8[$i] == "amabilidad"){
+                $p8_respuestas_correctas++;
+            }
+        }
+        if($p8_respuestas_correctas == 6){
+            $aciertos++;
+            echo "<img src='correcto.webp' width='50px'><hr>";
+        } else {
+            echo "<img src='incorrecto.png' width='50px'><hr>";
+        }
+    } else {
+        echo "<img src='incorrecto.png' width='50px'><hr>";
+    }
+
+    //Pregunta 9 - ¿Cuál es el nombre del dragón bebé que es amigo de Twilight Sparkle?
+    echo "<h3> ¿Cuál es el nombre del dragón bebé que es amigo de Twilight Sparkle?";
+    echo "<h5>Repuesta seleccionada ".$pregunta9." ---- Correcta = Spike </h5>";
+    if(strtoupper($pregunta9) == "SPIKE"){
+        $aciertos ++;
+        echo "<img src='correcto.webp' width='50px'><hr>";
+    } else {
+        echo "<img src='incorrecto.png' width='50px'><hr>";
+    }
+
+    //Pregunta 10 - ¿Cómo se llama la ciudad donde viven la mayoría de los ponys principales?
+    echo "<h3> ¿Cómo se llama la ciudad donde viven la mayoría de los ponys principales?";
+    echo "<h5>Repuesta seleccionada ".$pregunta10." ---- Correcta = Ponyville </h5>";
+    if($pregunta10 == "ponyville"){
+        $aciertos ++;
+        echo "<img src='correcto.webp' width='50px'><hr>";
+    } else {                
+        echo "<img src='incorrecto.png' width='50px'><hr>";
+    }
+
     echo "CALIFICACIÓN FINAl = " . ($aciertos * 10) . "%";
 
 ?>
